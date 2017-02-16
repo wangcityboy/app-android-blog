@@ -18,8 +18,8 @@ import wanghaifeng.net.myblog.fragment.LeftMenuFragment;
  */
 public class MainActivity extends SlidingFragmentActivity {
 
-    private static final String FRAGMENT_CONTENT = "fragment_content";
     private static final String FRAGMENT_LEFT_menu = "fragment_left_menu";
+    private static final String FRAGMENT_CONTENT = "fragment_content";
 
     @Override
     public void onCreate(Bundle savedInstanceState) {

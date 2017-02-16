@@ -41,7 +41,7 @@ public class LeftMenuFragment extends BaseFragment {
      * 得到网络获取的数据
      */
     public void getMenuData(MenuTabData menuData){
-        System.out.println("侧边栏得到数据："+ menuData);
+        System.out.println("===侧边栏得到数据："+ menuData);
         mMenuList= menuData.result;
         mLvMenuAdapter=new LvMenuAdapter();
         lvMenu.setAdapter(mLvMenuAdapter);

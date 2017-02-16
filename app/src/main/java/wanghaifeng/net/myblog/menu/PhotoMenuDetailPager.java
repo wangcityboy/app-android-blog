@@ -96,7 +96,7 @@ public class PhotoMenuDetailPager extends BaseMenuTabsPager {
         x.http().get(params, new Callback.CommonCallback<String>() {
             @Override
             public void onSuccess(String result) {
-                System.out.println("====////====相册列表"+result);
+                System.out.println("====相册列表"+result);
                 parseData(result);
 
                 //设置缓存
@@ -184,7 +184,7 @@ public class PhotoMenuDetailPager extends BaseMenuTabsPager {
 
             holder.tvTltle.setText(item.tg_name);
 
-            System.out.println("====]]]]]"+GlobalContants.HOMESEVER_URL+item.tg_face);
+            System.out.println("===="+GlobalContants.HOMESEVER_URL+item.tg_face);
             utils.disPlay(holder.ivPic,GlobalContants.HOMESEVER_URL+item.tg_face);
 
             return convertView;

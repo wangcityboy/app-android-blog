@@ -29,6 +29,9 @@
             android:padding="10dp"
             android:layout_height="wrap_content"
             android:layout_width="match_parent"
+            android:radius="1dp"
+            android:fillColor="#000000"
+            android:strokeColor="#000000"
             />
     </RelativeLayout>
 

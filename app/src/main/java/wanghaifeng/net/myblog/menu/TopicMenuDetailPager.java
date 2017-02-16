@@ -65,7 +65,6 @@ public class TopicMenuDetailPager extends BaseMenuTabsPager implements ViewPager
 
         vpNewsMenu.setAdapter(new MenuDetailAdapter());
         indicator.setViewPager(vpNewsMenu);//必须设置完viewpager的adapter
-
     }
 
     //滑动监听

@@ -1,5 +1,9 @@
 [
     {
+        "merged": "/Users/chinaskin/myblog/app-android-blog/ViewPagerIndicatorLibrary/build/intermediates/res/merged/androidTest/debug/drawable-v23/abc_control_background_material.xml",
+        "source": "/Users/chinaskin/myblog/app-android-blog/ViewPagerIndicatorLibrary/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/res/drawable-v23/abc_control_background_material.xml"
+    },
+    {
         "merged": "/Users/chinaskin/AndroidDev/myblog/ViewPagerIndicatorLibrary/build/intermediates/res/merged/androidTest/debug/drawable-v23/abc_control_background_material.xml",
         "source": "/Users/chinaskin/AndroidDev/myblog/ViewPagerIndicatorLibrary/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/res/drawable-v23/abc_control_background_material.xml"
     }

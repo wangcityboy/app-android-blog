@@ -16,7 +16,6 @@ public class PhotosData {
         public String tg_face;
         public String tg_date;
         public String tg_name;
-
     }
 
 }

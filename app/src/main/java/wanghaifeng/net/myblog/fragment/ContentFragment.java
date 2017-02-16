@@ -89,7 +89,7 @@ public class ContentFragment extends BaseFragment {
     }
 
     /**
-     * 获取新闻界面
+     * 获取加载第一页的数据
      */
     public BaseMenuListPager getNewsPager(){
         BaseMenuListPager newsPager= (BaseMenuListPager) mPageList.get(0);

@@ -1,5 +1,9 @@
 [
     {
+        "merged": "/Users/chinaskin/myblog/app-android-blog/slidingmenulibrary/build/intermediates/res/merged/androidTest/debug/layout/slidingmenumain.xml",
+        "source": "/Users/chinaskin/myblog/app-android-blog/slidingmenulibrary/build/intermediates/bundles/debug/res/layout/slidingmenumain.xml"
+    },
+    {
         "merged": "/Users/chinaskin/AndroidDev/myblog/slidingmenulibrary/build/intermediates/res/merged/androidTest/debug/layout/slidingmenumain.xml",
         "source": "/Users/chinaskin/AndroidDev/myblog/slidingmenulibrary/build/intermediates/bundles/debug/res/layout/slidingmenumain.xml"
     }

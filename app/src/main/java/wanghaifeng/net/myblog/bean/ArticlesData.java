@@ -37,7 +37,7 @@ public class ArticlesData {
 	}
 
 	/**
-	 * 头条轮播图对象
+	 * 互动页广告轮播图对象
 	 *
 	 * @author hdison
 	 *

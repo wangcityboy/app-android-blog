@@ -39,7 +39,7 @@ public class BaseMenuListPager extends BasePager {
     public void initData() {
         setSlidingMenuEnable(true);//侧边栏可以打开
 
-        String cache = CacheUtils.getCache(mActivity, GlobalContants.CATEGORIES_URL);
+        String cache = CacheUtils.getCache(mActivity, GlobalContants.MENU_URL);
         //若缓存不为空,则直接从缓存中获取json数据
         if (!TextUtils.isEmpty(cache)){
             parseData(cache);
@@ -54,15 +54,15 @@ public class BaseMenuListPager extends BasePager {
      */
     private void getDataFromServer(){
         //使用xUtils3实现与服务器的交互
-        RequestParams params = new RequestParams(GlobalContants.CATEGORIES_URL);
+        RequestParams params = new RequestParams(GlobalContants.MENU_URL);
         x.http().get(params, new Callback.CommonCallback<String>() {
             @Override
             public void onSuccess(String result) {
-                System.out.println("===返回结果：" + result);
+                System.out.println("===获取菜单数据：" + result);
                 parseData(result);
 
                 //设置缓存
-                CacheUtils.setCache(mActivity,GlobalContants.CATEGORIES_URL,result);
+                CacheUtils.setCache(mActivity,GlobalContants.MENU_URL,result);
             }
 
             @Override

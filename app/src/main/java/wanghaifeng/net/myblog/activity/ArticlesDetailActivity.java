@@ -54,8 +54,6 @@ public class ArticlesDetailActivity extends AppCompatActivity implements View.On
 
         WebSettings settings = mWebView.getSettings();
         settings.setJavaScriptEnabled(true);//支持JS
-//        settings.setBuiltInZoomControls(true);//显示放大缩小按钮
-//        settings.setUseWideViewPort(true);//支持双击放大缩小
         settings.setLayoutAlgorithm(WebSettings.LayoutAlgorithm.SINGLE_COLUMN);
 
         mWebView.setWebViewClient(new WebViewClient() {
@@ -115,6 +113,7 @@ public class ArticlesDetailActivity extends AppCompatActivity implements View.On
                 super.onReceivedTitle(view, title);
             }
         });
+
         String topHtml = "<html><body>";
         String baseURl = "http://wanghaifeng.net";
         String footHtml = "</body></html>";
@@ -123,8 +122,6 @@ public class ArticlesDetailActivity extends AppCompatActivity implements View.On
         sb.append(content);
         sb.append(footHtml);
         mWebView.loadDataWithBaseURL(baseURl, sb.toString(), "text/html", "utf-8", null);
-
-
     }
 
     @Override

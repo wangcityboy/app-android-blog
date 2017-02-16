@@ -15,8 +15,8 @@ public class AdvertisePhotoData {
         public String tg_id;
         public String tg_image;
         public String tg_content;
-        public String tg_type;
         public String tg_url;
+        public String tg_type;
 
         @Override
         public String toString() {

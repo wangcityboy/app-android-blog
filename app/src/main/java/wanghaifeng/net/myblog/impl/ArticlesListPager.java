@@ -190,12 +190,12 @@ public class ArticlesListPager extends BaseMenuTabsPager implements ViewPager.On
 
 
     /**
-     * 从服务器获取数据
+     * 从服务器获取广告轮播图数据
      */
     private void getAdvertiseFromServer() {
         //使用xUtils3实现与服务器的交互
         Log.i("mTabData", String.valueOf(mTabData));
-        System.out.println("====////"+GlobalContants.ADVERTISE_URL+mTabData.tg_id);
+        System.out.println("===="+GlobalContants.ADVERTISE_URL+mTabData.tg_id);
         RequestParams params = new RequestParams(GlobalContants.ADVERTISE_URL+mTabData.tg_id);
         x.http().get(params, new Callback.CommonCallback<String>() {
             @Override
@@ -319,7 +319,7 @@ public class ArticlesListPager extends BaseMenuTabsPager implements ViewPager.On
             mIndicator.setCurrentItem(0);//重新加载时，跳到第一个位置
         }
 
-        //实现头条新闻轮播条效果
+        //实现专题页文章轮播条效果
         if (mHandler ==null){
             mHandler =new Handler(){
                 @Override
@@ -332,12 +332,9 @@ public class ArticlesListPager extends BaseMenuTabsPager implements ViewPager.On
                     }
 
                     mVpTopDetail.setCurrentItem(currentItem);//设置当前viewPager的显示的item
-
                     mHandler.sendEmptyMessageDelayed(0, 3000);//过3秒再发送一条消息,实现轮播效果
-
                 }
             };
-
             mHandler.sendEmptyMessageDelayed(0, 3000);
         }
     }
